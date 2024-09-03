@@ -1,0 +1,248 @@
+:root {
+
+    --corBackPrimaria: #5154e7;
+    --corBackSecundaria: #fff;
+    --corTextoPrimaria: #636363; 
+    --corTextoSecundario: #000;
+
+}
+
+html {
+
+    min-width: 375px;
+
+}
+.container {
+
+    max-width: 1725px;
+    margin: 0px auto;
+    padding: 40px;
+} 
+
+header {
+
+    background-color: var(--corBackPrimaria);
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+header .container {
+
+    background-color: var(--corBackSecundaria);
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    border-radius: 5px 5px 0 0;
+}
+
+header .coluna-esquerda, .coluna-esquerda {
+
+    width: 50%;
+}
+
+header img{
+
+    max-width: 250px;
+    border-radius: 100%;
+
+
+}
+
+header h1 {
+
+    font-size: 40px;
+    color: var(--corTextoPrimaria);
+}
+
+header h2 {
+
+    font-size: 22px;
+    color: var(--corTextoSecundario);
+    margin-bottom: 20px;
+
+}
+
+header ul {
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+header ul li a {
+
+    font-size: 15px;
+    color: var(--corTextoSecundario);
+    text-decoration: none;
+    font-family: "Ubuntu Sans Mono", monospace;
+}
+
+main {
+
+    background-color: var(--corBackSecundaria);
+
+}
+
+main .container {
+
+    display: flex;
+    box-shadow: 7px 6px 15px -3px #00000028 ;
+    margin-bottom: 30px;
+    gap: 0 40px;
+    border-radius: 0 0 10px 10px;
+}
+
+main .container .coluna-esquerda, .coluna-direita {
+    
+    width: 50%;
+}
+
+main section {
+
+    border-bottom: 1px solid var(--corBackPrimaria);
+    margin-bottom: 20px;
+    min-height: 240px; 
+    color: var(--corTextoSecundario);
+
+}
+
+main section h2 {
+
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+main section p {
+
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--corTextoPrimaria);
+
+}
+
+main section ul li {
+    
+    margin-bottom: 12px;
+}
+
+main section h3 {
+
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main section h4 {
+
+    margin-bottom: 10px 0 15px 0;
+    font-size: 18px;
+}
+
+#curso {
+
+    margin-top: 20px;
+}
+
+footer {
+
+    background-color: var(--corBackPrimaria);
+   
+}
+
+
+footer .container ul {
+
+    display: flex;
+    border-top: 1px solid rgb(255, 255, 255);
+    gap: 40px;
+    justify-content: center;
+    
+}
+
+footer .container img {
+
+    max-width: 50px;
+    object-fit: scale-down;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    transition: 0.5s;
+    
+    
+    
+}   
+
+footer .container img:hover {
+
+    transform: scale(1.2);
+
+}
+
+footer .container a {
+
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    align-items: center;
+}
+    
+.logo a {
+
+    text-decoration: none;
+}
+
+
+.logo {
+    text-align: center;
+  }
+  
+  .shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: var(--corBackSecundaria);
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+  
+  .text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: #fff;
+    top: -48px;
+    position: relative;
+    pointer-events: none;
+  }
+  
+  .shape:hover {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+
+
+  @media (max-width: 425px) {
+
+    header .container {
+    
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    footer .container ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    }
+    
+    }
